@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Spotify - Web Player: Music for everyone</title>
+    <link rel="stylesheet" href="index.css" />
+    <script src="index.js"></script>
+  </head>
+  <body>
+    <div class="main-container">
+      <!-- this is the left container -->
+
+      <div class="left-container">
+        <div class="left-sub-container-1">
+          <div class="sidebar">
+            <img src="image/logo.svg" alt="logo" />
+            <img id="menu-close" src="image/close.svg" alt="" />
+          </div>
+
+          <ul>
+            <li><img src="image/home.svg" alt="" />Home</li>
+            <li><img src="image/search.svg" alt="" />Search</li>
+          </ul>
+        </div>
+
+        <!-- this is the left-sub-container-2 -->
+        <div class="left-sub-container-2">
+          <li><img src="image/library.svg" alt="" />Library</li>
+          <div class="songsList">
+            <ul></ul>
+          </div>
+        </div>
+        <div class="left-sub-container-3">
+          <span><button>LogOut</button></span>
+        </div>
+      </div>
+
+      <!-- this is the right cotainer -->
+      <div class="right-container">
+        <div class="right-sub-container-1">
+          <ul>
+            <img id="menu" src="image/menu.svg" alt="" />
+            <img src="image/leftarrow.svg" alt="" />
+            <img src="image//rightarrow.svg" alt="" />
+          </ul>
+          <ul>
+            <button id="signup">Sign up</button>
+            <button id="login">Log in</button>
+          </ul>
+        </div>
+        <div class="right-sub-container-2">
+          <h1>Spotify Playlist</h1>
+          <div class="card-container">
+            <div data-folder="sleep" class="card">
+              <img
+                src="	https://i.scdn.co/image/ab67616d00001e026404721c1943d5069f0805f3"
+                alt=""
+              />
+              <span class="playbtn" id="playcardbtn">
+                <img src="image/cardplay.svg" alt="" />
+              </span>
+              <p>sleep</p>
+            </div>
+            <div data-folder="copyright" class="card">
+              <img
+                src="	https://i.scdn.co/image/ab67616d00001e026404721c1943d5069f0805f3"
+                alt=""
+              />
+              <span class="playbtn" id="playcardbtn">
+                <img src="image/cardplay.svg" alt="" />
+              </span>
+              <p>copyright</p>
+            </div>
+            <div data-folder="mornning" class="card">
+              <img
+                src="	https://i.scdn.co/image/ab67616d00001e026404721c1943d5069f0805f3"
+                alt=""
+              />
+              <span class="playbtn" id="playcardbtn">
+                <img src="image/cardplay.svg" alt="" />
+              </span>
+              <p>Mornning</p>
+            </div>
+          </div>
+        </div>
+        <div class="right-sub-container-3">
+          <div class="playbar">
+            <div class="songinfo"></div>
+            <div class="playbtns">
+              <img id="preview" src="image//previews.svg" alt="" />
+              <img id="play" src="image/play.svg" alt="" />
+              <img id="next" src="image/next.svg" alt="" />
+            </div>
+            <div class="sub-box">
+              <div class="volume">
+                <img src="image/volume.svg" alt="" />
+                <div class="range">
+                  <input type="range" name="volume" id="volume" />
+                </div>
+              </div>
+              <div class="songTime"></div>
+            </div>
+          </div>
+          <div class="tracks">
+            <div class="trackLine"></div>
+            <div class="trackPoint"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
